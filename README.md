@@ -31,10 +31,12 @@ opencv、ultralytics、torch、torchvision<br>
 运行despeckleTestMain10/35两个.py文件得到两组不同程度的降噪结果<br>
 回到SAR_Summit_Version_1105\predict文件夹<br>
 打开命令行运行如下四条命令<br>
+<code>
 yolo obb predict model=train1/best.pt source=Data/testDenoised35 device=0 conf=0.3 iou=0.3 save_txt=True save_conf=True project=SAR_predict name=exp1
 yolo obb predict model=train2/best.pt source=Data/testDenoised10 device=0 conf=0.2 iou=0.3 save_txt=True save_conf=True project=SAR_predict name=exp2
 yolo obb predict model=train3/best.pt source=Data/testDenoised10 device=0 conf=0.3 iou=0.3 save_txt=True save_conf=True project=SAR_predict name=exp3
 yolo obb predict model=train4/best.pt source=Data/testDenoised10 device=0 conf=0.2 iou=0.3 save_txt=True save_conf=True project=SAR_predict name=exp4
+</code>
 <br>
 得到四个模型的检测结果<br>
 然后运行txtMerge.py进行初步合并<br>
