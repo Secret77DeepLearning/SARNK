@@ -1,9 +1,4 @@
-
-
-#########
-
-
-算法说明
+# Heading level 1	算法说明
 
 一、算法概述
 用到的降噪算法：改进的SAR-BM3D自适应降噪
@@ -25,11 +20,7 @@ DOTA数据集用于产生预训练的yolo模型，该模型是ulralytics包自�
 五、项目的主要依赖项
 opencv、ultralytics、torch、torchvision
 
-
-#########
-
-
-模型预测验证
+# Heading level 1	模型预测验证
 
 一、验证环境配置
 打开SAR_Summit_Version_1105\predict文件夹
@@ -53,11 +44,7 @@ yolo obb predict model=train4/best.pt source=Data/testDenoised10 device=0 conf=0
 依照文件夹中的requirementsPKL.txt配置环境
 在环境中运行pklCreate.py得到pkl文件
 
-
-#########
-
-
-模型训练
+# Heading level 1	模型训练
 
 一、训练环境配置
 打开SAR_Summit_Version_1105\trainData文件夹
